@@ -1,4 +1,4 @@
-package outputExamples;
+package inputExamples;
 import java.util.Scanner;
 public class MonkeyHeight {
 	public static void main(String[] args) {
