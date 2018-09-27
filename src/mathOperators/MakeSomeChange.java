@@ -29,7 +29,7 @@ System.out.println("You need " + (int)dollars + "dollars");
 System.out.println("You need " + (int)quarters + "quarters");
 System.out.println("You need " + (int)dimes + "dimes");
 System.out.println("You need " + (int)nickels + "nickels");
-System.out.println("You need " + (int)pennies + "pennies");
+System.out.println("You need " + (int)Math.ceil(pennies) + "pennies");
 	}
 
 }
