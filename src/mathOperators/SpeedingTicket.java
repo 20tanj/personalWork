@@ -13,7 +13,7 @@ speedlimit= input.nextInt();
 System.out.println("How fast was the driver going?");
 driversspeed= input.nextInt();
 costofticket= driversspeed-speedlimit;
-System.out.println("The cost of your ticket is " + costofticket+ " dollars");
+System.out.println("The driver was going " + driversspeed + " mph" + " The speed limit was " +speedlimit+ " mph" +" The cost of your ticket is " + costofticket+ " dollars");
 	}
 
 }
