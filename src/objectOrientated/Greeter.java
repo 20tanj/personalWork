@@ -8,10 +8,15 @@ public class Greeter {
 	// constructors- methods for constructing the object
 	
 	//default constructor
-	
+
 	public Greeter() {
 	//Statements to initialize the state of the object
-
 	}
 //methods- things the object can do
-}
+	public void sayHello()
+	{
+		System.out.print("Hello");
+	}
+	
+	
+	}
