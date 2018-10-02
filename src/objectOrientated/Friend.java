@@ -12,4 +12,8 @@ public class Friend {
 	//Statements to initialize the state of the object
 	}
 //methods- things the object can do
+public void sayMessage()
+{
+	System.out.println("You are a great friend");
+}
 }
