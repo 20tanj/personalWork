@@ -165,6 +165,7 @@ public class ShoeActivity {
 */
 		
 		//Weight Activity
+		/*
 		int number= input.nextInt();
 		switch(number)
 		{
@@ -174,18 +175,58 @@ public class ShoeActivity {
 		case 88:
 			System.out.println("Venus");
 			break;
-		case 38:
-			System.out.println(");
 		default:
 			System.out.println("None");
 		}
+		*/
 		
+		// Loop Activity (1-3)
+		/*
+		System.out.println("What is the end number?");
+		double number=input.nextDouble();
+		int count=0;
+		while(count<=number)
+		{
+			System.out.println(count);
+			count=count+2;
+		}
+		*/
 		
+		// Loop Activity (4-6)
+		/*
+		System.out.println("What is your number number?");
+		double number=input.nextDouble();
+		double sum=0;
+		while(number!=9999)
+		{
+			sum=sum+number;
+			System.out.println("Please enter a new number");
+			number=input.nextDouble();
+		}
+		System.out.println("You have quit");
+		System.out.println("The sum of the numbers you typed in was " + sum);
+		*/
 		
+		// Loop Activity (7-8)
 		
+		System.out.println("What is your number number?");
+		double number=input.nextDouble();
+		double sum=0;
+		double entered=0;
+		double largest=0;
+		while(number!=9999)
+		{
+			
+			if(number>largest)
+			{
+				largest=number;
+			}
 		
-		
-		
+			System.out.println("Please enter a new number (9999 to quit)");
+			number=input.nextDouble();
+		}
+		System.out.println("You have quit");
+		System.out.println(largest);
 		
 		
 		
