@@ -138,101 +138,105 @@ public class ShoeActivity {
 
 		// Test Scores Activity
 		/*
-		System.out.println("What is your test score?");
-		double first = input.nextDouble();
-		System.out.println("What is your test score?");
-		double second = input.nextDouble();
-		System.out.println("What is your test score?");
-		double third = input.nextDouble();
-		double average = (first + second + third) / 3;
-		if (average > 92.5) {
-			System.out.println("A");
-		} else {
-			if (average > 84.5) {
-				System.out.println("B");
-			} else {
-				if (average > 77.5) {
-					System.out.println("C");
-				} else {
-					if (average > 69.5) {
-						System.out.println("D");
-					} else {
-						System.out.println("F");
-					}
-				}
-			}
-		}
-*/
-		
-		//Weight Activity
+		 * System.out.println("What is your test score?"); double first =
+		 * input.nextDouble(); System.out.println("What is your test score?");
+		 * double second = input.nextDouble();
+		 * System.out.println("What is your test score?"); double third =
+		 * input.nextDouble(); double average = (first + second + third) / 3; if
+		 * (average > 92.5) { System.out.println("A"); } else { if (average >
+		 * 84.5) { System.out.println("B"); } else { if (average > 77.5) {
+		 * System.out.println("C"); } else { if (average > 69.5) {
+		 * System.out.println("D"); } else { System.out.println("F"); } } } }
+		 */
+
+		// Weight Activity
 		/*
-		int number= input.nextInt();
-		switch(number)
-		{
-		case 37:
-			System.out.println("Mercury");
-			break;
-		case 88:
-			System.out.println("Venus");
-			break;
-		default:
-			System.out.println("None");
-		}
-		*/
-		
+		 * int number= input.nextInt(); switch(number) { case 37:
+		 * System.out.println("Mercury"); break; case 88:
+		 * System.out.println("Venus"); break; default:
+		 * System.out.println("None"); }
+		 */
+
 		// Loop Activity (1-3)
 		/*
-		System.out.println("What is the end number?");
-		double number=input.nextDouble();
-		int count=0;
-		while(count<=number)
-		{
-			System.out.println(count);
-			count=count+2;
-		}
-		*/
-		
+		 * System.out.println("What is the end number?"); double
+		 * number=input.nextDouble(); int count=0; while(count<=number) {
+		 * System.out.println(count); count=count+2; }
+		 */
+
 		// Loop Activity (4-6)
 		/*
-		System.out.println("What is your number number?");
-		double number=input.nextDouble();
-		double sum=0;
-		while(number!=9999)
-		{
-			sum=sum+number;
-			System.out.println("Please enter a new number");
-			number=input.nextDouble();
-		}
-		System.out.println("You have quit");
-		System.out.println("The sum of the numbers you typed in was " + sum);
-		*/
-		
+		 * System.out.println("What is your number number?"); double
+		 * number=input.nextDouble(); double sum=0; while(number!=9999) {
+		 * sum=sum+number; System.out.println("Please enter a new number");
+		 * number=input.nextDouble(); } System.out.println("You have quit");
+		 * System.out.println("The sum of the numbers you typed in was " + sum);
+		 */
+
 		// Loop Activity (7-8)
+		/*
+		 * System.out.println("What is your number number?"); double
+		 * number=input.nextDouble(); double sum=0; double entered=0; double
+		 * largest=0; while(number!=9999) {
+		 * 
+		 * if(number>largest) { largest=number; }
+		 * 
+		 * System.out.println("Please enter a new number (9999 to quit)");
+		 * number=input.nextDouble(); } System.out.println("You have quit");
+		 * System.out.println(largest);
+		 */
+		// Do While Loop Activity (1-
+		/*
+		 * System.out.println("Please enter a number"); double number =
+		 * input.nextDouble(); double largest=0; double smallest=999.0; do {
+		 * if(number>largest) { largest=number; } if(number<smallest) {
+		 * smallest=number; } System.out.println("Please enter another number");
+		 * number = input.nextDouble(); } while (number != 9999);
+		 * System.out.println(largest-smallest);
+		 */
+
+		// For Loop Activity (1-6)
 		
-		System.out.println("What is your number number?");
-		double number=input.nextDouble();
-		double sum=0;
-		double entered=0;
-		double largest=0;
-		while(number!=9999)
-		{
-			
-			if(number>largest)
-			{
-				largest=number;
+	/*
+			for( int i = 1; i <=5 ; i=i+1){
+				for( int j= 1; j<=4; j=j+1){
+					System.out.print(i*j);
+					
 			}
 		
-			System.out.println("Please enter a new number (9999 to quit)");
-			number=input.nextDouble();
+	
 		}
-		System.out.println("You have quit");
-		System.out.println(largest);
+		}
+		*/
+		// Nested Loop Activity
 		
-		
-		
-		
-		
-		
-		
+int count=0;
+int num=0;
+int divisor=0;
+int largest=0;
+int most=0;
+for(num=1;num<=1000; num++){
+	divisor=0;
+	for(count=1;count<=num; count++){
+		if(num%count==0){
+			divisor++;
+			if(divisor>most){
+				most=divisor;
+				largest=num;
+			}
+		}
 	}
 }
+System.out.println(largest);
+	}
+}
+
+		
+		
+		
+		
+		
+		
+		
+	
+
