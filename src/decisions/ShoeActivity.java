@@ -196,47 +196,108 @@ public class ShoeActivity {
 		 */
 
 		// For Loop Activity (1-6)
-		
-	/*
-			for( int i = 1; i <=5 ; i=i+1){
-				for( int j= 1; j<=4; j=j+1){
-					System.out.print(i*j);
-					
-			}
-		
-	
-		}
-		}
-		*/
+
+		/*
+		 * for( int i = 1; i <=5 ; i=i+1){ for( int j= 1; j<=4; j=j+1){
+		 * System.out.print(i*j);
+		 * 
+		 * }
+		 * 
+		 * 
+		 * } }
+		 */
+
 		// Nested Loop Activity
-		
-int count=0;
-int num=0;
-int divisor=0;
-int largest=0;
-int most=0;
-for(num=1;num<=1000; num++){
-	divisor=0;
-	for(count=1;count<=num; count++){
-		if(num%count==0){
-			divisor++;
-			if(divisor>most){
-				most=divisor;
-				largest=num;
+		/*
+		 * int count=0; int num=0; int divisor=0; int largest=0; int most=0;
+		 * for(num=1;num<=1000; num++){ divisor=0; for(count=1;count<=num;
+		 * count++){ if(num%count==0){ divisor++; if(divisor>most){
+		 * most=divisor; largest=num; } } } } System.out.println(largest);
+		 */
+
+		// Activity Sum of Odd
+		/*
+		 * System.out.println("Please type a positive integer:"); int number=
+		 * input.nextInt(); if(number<=0){ number=10; } int sum=0; for(int
+		 * counter=1; counter<=number; counter=counter+2) { sum=sum+counter; }
+		 * System.out.println(sum);
+		 */
+
+		// Activity Class Average
+		/*
+		 * int sum=0; int grade=0; System.out.println("How many students:"); int
+		 * students=input.nextInt(); for(int counter=0;counter<students;
+		 * counter=counter+1) { System.out.print("Enter Grade for student" +
+		 * (counter+1) + ":" ); grade= input.nextInt(); sum= sum+grade; }
+		 * System.out.println(sum/students);
+		 */
+
+		// Activity Factorial
+		/*
+		 * System.out.println("What number do you want the factorial for?"); int
+		 * number= input.nextInt(); int factorial= 1; for(int counter=1;
+		 * counter<=number; counter=counter+1){ factorial= factorial*counter; }
+		 * System.out.println(factorial);
+		 */
+
+		// Activity Cash Register
+		/*
+		 * System.out.println("How many items?"); int items=input.nextInt(); int
+		 * total=0; for (int counter=1; counter<=items; counter=counter+1) {
+		 * System.out.println("Price of" + (counter) + "item"); int
+		 * price=input.nextInt(); total=total +price; }
+		 * System.out.println(total); int tax= (total/100)*5;
+		 * System.out.println(tax); System.out.println(total+tax);
+		 */
+
+		// Activity Divisors
+		/*
+		 * System.out.println("Provide a positive integer:"); int
+		 * number=input.nextInt(); int largest=0; for(int divisor=1;
+		 * divisor<number; divisor= divisor+1) { if(number%divisor==0) {
+		 * largest=divisor; } } System.out.println(largest);
+		 */
+
+		// Activity Prime Number
+		/*
+		 * System.out.println("Provide a positive integer:"); int number=
+		 * input.nextInt(); for(int counter=1; counter<=number;
+		 * counter=counter+1) { if(number%counter==0) {
+		 * System.out.println("Not Prime"); } else {
+		 * System.out.println("Prime");
+		 * 
+		 * } }
+		 */
+
+		// Number Output Activity
+		/*
+		 * for (int counter = 1; counter <= 5; counter = counter + 1) { for (int
+		 * counter2 = counter; counter2 <= 5; counter2 = counter2 + 1) {
+		 * System.out.print(counter2);
+		 * 
+		 * } System.out.println(counter); }
+		 */
+
+		// Divisors Input
+		System.out.println("Give a positive number:");
+		int number = input.nextInt();
+		int largestdivisor = 0;
+		int largest = 0;
+		int divisors = 0;
+		for (int up = 1; up <= number; up = up + 1) {
+			for (int counter = 1; counter <= up; counter = counter + 1) {
+				if (up % counter == 0) {
+					divisors = divisors + 1;
+				}
 			}
+			if (divisors >= largestdivisor) {
+				largestdivisor=divisors;
+				largest = up;
+			
+			}
+			divisors = 0;
 		}
-	}
-}
+		
 System.out.println(largest);
 	}
 }
-
-		
-		
-		
-		
-		
-		
-		
-	
-
