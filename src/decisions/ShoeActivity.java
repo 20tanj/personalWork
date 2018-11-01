@@ -279,6 +279,7 @@ public class ShoeActivity {
 		 */
 
 		// Divisors Input
+		/*
 		System.out.println("Give a positive number:");
 		int number = input.nextInt();
 		int largestdivisor = 0;
@@ -299,5 +300,44 @@ public class ShoeActivity {
 		}
 		
 System.out.println(largest);
+*/
+		
+		/*
+		System.out.println("Give a radius");
+		double radius=input.nextDouble();
+		NewCircle sam= new NewCircle(radius);
+		int i=1;
+		do{
+			System.out.println(sam.getCircumfrance());
+			if(i<3)
+			{
+			System.out.println("Type another radius");
+			radius= input.nextDouble();
+			}
+			i++;
+		
+		}while (i<=3);
+		*/
+		/*
+		System.out.println("Provide a positive integer");
+		int number=input.nextInt();
+do{
+		int sum=0;
+		for(int count=1; count<=number; count=count+1)
+		{
+			if(number%count==0)
+			{
+				if(count%2==0)
+				{
+					sum=sum+count;
+				}
+			}
+		}
+		System.out.println(sum);
+		System.out.println("Provide a positive integer");
+		number=input.nextInt();
+		}while(number!=9999);
+		*/
+		
 	}
 }
