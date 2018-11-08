@@ -1,5 +1,6 @@
 package decisions;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class ShoeActivity {
@@ -7,7 +8,7 @@ public class ShoeActivity {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-
+		Random thing = new Random();
 		// Age Activity
 		/*
 		 * System.out.println("What is your age?"); double age=
@@ -280,64 +281,125 @@ public class ShoeActivity {
 
 		// Divisors Input
 		/*
-		System.out.println("Give a positive number:");
-		int number = input.nextInt();
-		int largestdivisor = 0;
-		int largest = 0;
-		int divisors = 0;
-		for (int up = 1; up <= number; up = up + 1) {
-			for (int counter = 1; counter <= up; counter = counter + 1) {
-				if (up % counter == 0) {
-					divisors = divisors + 1;
-				}
+		 * System.out.println("Give a positive number:"); int number =
+		 * input.nextInt(); int largestdivisor = 0; int largest = 0; int
+		 * divisors = 0; for (int up = 1; up <= number; up = up + 1) { for (int
+		 * counter = 1; counter <= up; counter = counter + 1) { if (up % counter
+		 * == 0) { divisors = divisors + 1; } } if (divisors >= largestdivisor)
+		 * { largestdivisor=divisors; largest = up;
+		 * 
+		 * } divisors = 0; }
+		 * 
+		 * System.out.println(largest);
+		 */
+
+		/*
+		 * System.out.println("Give a radius"); double
+		 * radius=input.nextDouble(); NewCircle sam= new NewCircle(radius); int
+		 * i=1; do{ System.out.println(sam.getCircumfrance()); if(i<3) {
+		 * System.out.println("Type another radius"); radius=
+		 * input.nextDouble(); } i++;
+		 * 
+		 * }while (i<=3);
+		 */
+		/*
+		 * System.out.println("Provide a positive integer"); int
+		 * number=input.nextInt(); do{ int sum=0; for(int count=1;
+		 * count<=number; count=count+1) { if(number%count==0) { if(count%2==0)
+		 * { sum=sum+count; } } } System.out.println(sum);
+		 * System.out.println("Provide a positive integer");
+		 * number=input.nextInt(); }while(number!=9999);
+		 */
+
+		// low+(int)(Math.random()*(high-low+1))
+		/*
+		 * int low = 1; int high = 2; int sumheads = 0; int sumtails = 0; for
+		 * (int counter = 1; counter <= 100000000; counter = counter + 1) { int
+		 * random = low + (int) (thing.nextInt(high - low + 1)); if (random ==
+		 * 1) { sumheads = sumheads + 1; } else { sumtails = sumtails + 1; } }
+		 * System.out.println("Heads:" + sumheads + "Tails:" + sumtails);
+		 */
+		/*
+		 * int low = 1; int high = 13; int total = 0; for (int counter = 1;
+		 * counter <= 87; counter++) { int random = low + (int)
+		 * (thing.nextInt(high - low + 1)); if (random % 3 == 0) { total++; }
+		 * 
+		 * } System.out.println(total);
+		 */
+		/*
+		 * int low=26; int high=43; int total=0; for(int counter=1;
+		 * counter<=248; counter++) { int random = low + (int)
+		 * (thing.nextInt(high - low + 1)); if(random>36) total++; }
+		 * System.out.println(total);
+		 */
+		// Roll a Die
+		/*
+		 * System.out.println("How many sides?"); int sides= input.nextInt();
+		 * System.out.println("How many roles?"); int rolls= input.nextInt();
+		 * int low= 1; int high= sides; for(int counter=1; counter<=rolls;
+		 * counter=counter+1) { int random = low + (int) (thing.nextInt(high -
+		 * low + 1)); System.out.println(random); }
+		 */
+		/*
+		int low = 1;
+		int high = 6;
+		int sum1 = 0;
+		int sum2 = 0;
+		int sum3 = 0;
+		int sum4 = 0;
+		int sum5 = 0;
+		int sum6 = 0;
+		System.out.println("How many rolls?");
+		int rolls = input.nextInt();
+		for (int counter = 1; counter <= rolls; counter = counter + 1) {
+			int random = low + (int) (thing.nextInt(high - low + 1));
+			if (random == 1) {
+				sum1 = sum1 + 1;
 			}
-			if (divisors >= largestdivisor) {
-				largestdivisor=divisors;
-				largest = up;
-			
+			if (random == 2) {
+				sum2 = sum2 + 1;
 			}
-			divisors = 0;
+			if (random == 3) {
+				sum3 = sum3 + 1;
+			}
+			if (random == 4) {
+				sum4 = sum4 + 1;
+			}
+			if (random == 5) {
+				sum5 = sum5 + 1;
+			}
+			if (random == 6) {
+				sum6 = sum6 + 1;
+			}
 		}
-		
-System.out.println(largest);
-*/
-		
-		/*
-		System.out.println("Give a radius");
-		double radius=input.nextDouble();
-		NewCircle sam= new NewCircle(radius);
-		int i=1;
-		do{
-			System.out.println(sam.getCircumfrance());
-			if(i<3)
-			{
-			System.out.println("Type another radius");
-			radius= input.nextDouble();
-			}
-			i++;
-		
-		}while (i<=3);
+		System.out.println(((double)sum1 / (double)rolls) * 100 + "%");
+		System.out.println(((double)sum2 / (double)rolls) * 100 + "%");
+		System.out.println(((double)sum3 / (double)rolls) * 100 + "%");
+		System.out.println(((double)sum4 / (double)rolls) * 100 + "%");
+		System.out.println(((double)sum5 / (double)rolls) * 100 + "%");
+		System.out.println(((double)sum6 / (double)rolls) * 100 + "%");
 		*/
-		/*
-		System.out.println("Provide a positive integer");
-		int number=input.nextInt();
-do{
-		int sum=0;
-		for(int count=1; count<=number; count=count+1)
+		
+		int low=1;
+		int high=2;
+		double head=0;
+		double largest=0;
+		for(int counter=1; counter<=100000; counter=counter+1)
 		{
-			if(number%count==0)
+			for(int counter2=1; counter2<=1000; counter2=counter2+1)
 			{
-				if(count%2==0)
+				int random = low + (int) (thing.nextInt(high - low + 1));
+				if(random==1)
 				{
-					sum=sum+count;
+					head++;
 				}
 			}
+			if((head/1000)*100>=largest)
+			{
+				largest=(head/1000)*100;
+			}	
+			head=0;
 		}
-		System.out.println(sum);
-		System.out.println("Provide a positive integer");
-		number=input.nextInt();
-		}while(number!=9999);
-		*/
-		
+		System.out.println(largest);
 	}
 }
