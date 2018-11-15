@@ -99,7 +99,7 @@ public class StringActivities {
 		*/
 		
 		//Activity 13
-		
+		/*
 		System.out.println("Give SSN");
 		String sentence = input.nextLine();
 		
@@ -111,6 +111,30 @@ public class StringActivities {
 		
 		for(int counter3=0; counter3<=2; counter3++)
 			System.out.print(sentence.charAt(counter3));
+			*/
+		
+		//Activity 14
+		Essay bob=new Essay();
+		
+	System.out.println(bob.getLength());
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	}
 
 }
