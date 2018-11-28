@@ -6,7 +6,7 @@ public class arrayActivities {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Scanner input=new Scanner(System.in);
-
+Random generator= new Random();
 //Activity 1
 /*
 int[] scores= new int[5];
@@ -103,7 +103,7 @@ for(int j=0; j<scores.length; j++)
 */
 
 //Activity 7
-
+/*
 String[] scores= new String[5];
 for(int i=0; i<scores.length; i++)
 {
@@ -121,7 +121,54 @@ for(int j=0; j<scores.length; j++)
 	}
 }
 System.out.println(total);
+*/
 
+//One Dimensional Arrays of Objects
+/*
+Rectangle[] rectangle2= new Rectangle[100];
+int min= 10;
+int max=56;
+int min2= 10;
+int max2=56;
+int smallest=3136;
+int smallestindex=0;
+for(int i=0; i<rectangle2.length; i++)
+{
+	int side=min+ generator.nextInt(max-min+1);
+	int side2=min2+ generator.nextInt(max2-min2+1);
+	rectangle2[i]=new Rectangle(side, side2);
+}
+for(int j=0; j<rectangle2.length; j++)
+{
+	System.out.println(rectangle2[j].getLength());
+	System.out.println(rectangle2[j].getWidth());
+	System.out.println(rectangle2[j].area());
+}
+for(int k=0; k<rectangle2.length; k++)
+{
+	if(rectangle2[k].area()<smallest)
+	{
+		smallest=rectangle2[k].area();
+		smallestindex=k;
+	}
+	
+}
+*/
+
+Friend[] friend2= new Friend[5];
+for(int i=0; i<friend2.length;i++)
+{
+	
+	String name= input.nextLine();
+	int age= input.nextInt();
+	friend2[i]=new Friend(name, age);
+	
+}
+for(int j=friend2.length-1; j>0; j--)
+{
+	System.out.println(friend2[j].getName());
+	System.out.println(friend2[j].getAge());
+}
 
 
 }
