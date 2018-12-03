@@ -110,12 +110,30 @@ public class arrayActivities {
 		}
 		System.out.println(total);
 		*/
-		
+		/*
 		String sentence = input.nextLine();
 		String[] first = sentence.split(" ");
 		int max= first.length-1;
 		int min= 0;
 		int side=min+ generator.nextInt(max-min+1); 
 		System.out.println(first[side]);
+		*/
+		int row=23;
+		int column=9;
+		int min=0;
+		int max=100;
+		int sum=0;
+		int [][] numbers= new int [row][column];
+		for(int i=0; i<numbers.length; i++)
+		{
+			for(int j=0; j<numbers[0].length;j++)
+			{
+				int side=min+ generator.nextInt(max-min+1);
+				numbers[i][j]=side;
+				sum+= numbers[i][j];
+			}
+			
+		}
+		System.out.println(sum);
 	}
 }
