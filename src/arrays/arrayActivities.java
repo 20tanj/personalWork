@@ -97,43 +97,76 @@ public class arrayActivities {
 		 */
 
 		// Split Method Activity
-/*
-		String sentence = input.nextLine();
-		String keyword= input.nextLine();
-		String[] first = sentence.split(" ");
-		int total=0;
-		for (int i = 0; i < first.length; i++) {
-			if(first[i].equalsIgnoreCase(keyword)==true)
-			{
-				total++;
-			}
-		}
-		System.out.println(total);
-		*/
 		/*
-		String sentence = input.nextLine();
-		String[] first = sentence.split(" ");
-		int max= first.length-1;
-		int min= 0;
-		int side=min+ generator.nextInt(max-min+1); 
-		System.out.println(first[side]);
-		*/
-		int row=23;
-		int column=9;
-		int min=0;
-		int max=100;
-		int sum=0;
-		int [][] numbers= new int [row][column];
-		for(int i=0; i<numbers.length; i++)
-		{
-			for(int j=0; j<numbers[0].length;j++)
-			{
-				int side=min+ generator.nextInt(max-min+1);
-				numbers[i][j]=side;
-				sum+= numbers[i][j];
+		 * String sentence = input.nextLine(); String keyword= input.nextLine();
+		 * String[] first = sentence.split(" "); int total=0; for (int i = 0; i
+		 * < first.length; i++) { if(first[i].equalsIgnoreCase(keyword)==true) {
+		 * total++; } } System.out.println(total);
+		 */
+		/*
+		 * String sentence = input.nextLine(); String[] first =
+		 * sentence.split(" "); int max= first.length-1; int min= 0; int
+		 * side=min+ generator.nextInt(max-min+1);
+		 * System.out.println(first[side]);
+		 */
+		/*
+		 * int row=23; int column=9; int min=0; int max=100; int sum=0; int [][]
+		 * numbers= new int [row][column]; for(int i=0; i<numbers.length; i++) {
+		 * for(int j=0; j<numbers[0].length;j++) { int side=min+
+		 * generator.nextInt(max-min+1); numbers[i][j]=side; sum+=
+		 * numbers[i][j]; }
+		 * 
+		 * } System.out.println(sum);
+		 */
+		/*
+		 * int row=3; int column=7; int third=9; int min=0; int max=50;
+		 * 
+		 * int [][][] numbers= new int [row][column][third]; for(int i=0;
+		 * i<numbers.length; i++) { for(int j=0; j<numbers[0].length;j++) {
+		 * for(int k=0; k<numbers[0][0].length;k++) { int side=min+
+		 * generator.nextInt(max-min+1); numbers[i][j][k]=side; } }
+		 * 
+		 * }
+		 */
+		/*
+		 * int row=4; int column=3;
+		 * 
+		 * 
+		 * String [][] numbers= new String [row][column]; for(int i=0;
+		 * i<numbers.length; i++) { for(int j=0; j<numbers[0].length;j++) {
+		 * System.out.println("give name"); numbers[i][j]=input.nextLine();
+		 * 
+		 * } } for(int i=0; i<numbers.length; i++) { for(int j=0;
+		 * j<numbers[0].length;j++) {
+		 * 
+		 * System.out.print(numbers[i][j]+" ");
+		 * 
+		 * } System.out.println(); }
+		 */
+		int row = 18;
+		int column = 5;
+		int min = 0;
+		int max = 100;
+
+		Friend[][] numbers = new Friend[row][column];
+		for (int i = 0; i < numbers.length; i++) {
+			for (int j = 0; j < numbers[0].length; j++) {
+				numbers[i][j] = new Friend();
+
 			}
-			
 		}
-		System.out.println(sum);
+		for (int i = 0; i < numbers.length; i++) {
+			for (int j = 0; j < numbers[0].length; j++) {
+				int side = min + generator.nextInt(max - min + 1);
+				numbers[i][j].setAge(side);
+
+			}
+		}
+		for (int i = 0; i < numbers.length; i++) {
+			for (int j = 0; j < numbers[0].length; j++) {
+				System.out.println(numbers[i][j].getAge());
+
+			}
+		}
 	}
 }
