@@ -1,8 +1,8 @@
 package arrays;
 
-import java.util.Scanner;
+import java.util.Scanner; 
 import java.util.Random;
-
+import java.util.ArrayList;
 public class arrayActivities {
 
 	public static void main(String[] args) {
@@ -143,6 +143,7 @@ public class arrayActivities {
 		 * 
 		 * } System.out.println(); }
 		 */
+		/*
 		int row = 18;
 		int column = 5;
 		int min = 0;
@@ -168,5 +169,24 @@ public class arrayActivities {
 
 			}
 		}
+		*/
+		/*
+		ArrayList<String> names= new ArrayList<String>();
+		names.add("Bob");
+		names.add("Jane");
+		names.add(0, "Billy");
+	System.out.println("Give your name");
+		String name=input.nextLine();
+		names.add(name);
+		*/
+		
+		ArrayList<Friend> friends= new ArrayList<Friend>();
+		Friend person=new Friend("Jacki Jones",93);
+		friends.add(person);
+		friends.add(0, new Friend("John Smith", 45));
+		
+		
+		
+		
 	}
 }
