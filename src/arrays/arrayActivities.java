@@ -171,6 +171,7 @@ public class arrayActivities {
 		}
 		*/
 		/*
+		
 		ArrayList<String> names= new ArrayList<String>();
 		names.add("Bob");
 		names.add("Jane");
@@ -178,15 +179,20 @@ public class arrayActivities {
 	System.out.println("Give your name");
 		String name=input.nextLine();
 		names.add(name);
+		for(int i=0; i<names.size(); i++)
+		{
+			System.out.println(names.get(i));
+		}
 		*/
 		
 		ArrayList<Friend> friends= new ArrayList<Friend>();
-		Friend person=new Friend("Jacki Jones",93);
-		friends.add(person);
 		friends.add(0, new Friend("John Smith", 45));
-		
-		
-		
+		friends.add(0, new Friend("Jane", 45));
+		friends.add(0, new Friend("Jacob", 45));
+		for(int i=0; i<friends.size(); i++)
+		{
+			System.out.println(friends.get(i).getAge());
+		}
 		
 	}
 }
