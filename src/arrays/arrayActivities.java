@@ -184,7 +184,7 @@ public class arrayActivities {
 			System.out.println(names.get(i));
 		}
 		*/
-		
+		/*
 		ArrayList<Friend> friends= new ArrayList<Friend>();
 		friends.add(0, new Friend("John Smith", 45));
 		friends.add(0, new Friend("Jane", 45));
@@ -193,6 +193,47 @@ public class arrayActivities {
 		{
 			System.out.println(friends.get(i).getAge());
 		}
+		*/
+		/*
+		ArrayList<Rectangle> rectangles= new ArrayList<Rectangle>();
+		int min=50;
+		int max=70;
+		int min2=0;
+		int max2=399;
+		for(int i=0; i<400; i++)
+		{
+			int length=min+ generator.nextInt(max-min+1);
+			int width=min+ generator.nextInt(max-min+1);
+			rectangles.add(0, new Rectangle(length, width));
+		}
+		int rec=min2+ generator.nextInt(max2-min2+1);
+		Rectangle save= rectangles.remove(rec);
+		System.out.println(save.getLength());
+		for(int k=398; k>=0; k--)
+		{
+			System.out.println(rectangles.get(k).area());
+		}
+	*/
+		/*
+	ArrayList<String> names= new ArrayList<String>();
+	names.add("Jack");
+	names.add("Joey");
+	names.add("Jacob");
+	names.add("Jake");
+	names.add("Joe");
+	String first= names.remove(0);
+	String last = names.remove(names.size()-1);
+	System.out.println(names);
+	*/
+		
+		ArrayList<Rectangle> rectangles= new ArrayList<Rectangle>();
+		rectangles.add(new Rectangle());
+		rectangles.add(new Rectangle());
+		rectangles.add(new Rectangle());
+		
+		Rectangle last= rectangles.remove(2);
+		rectangles.set(0, last);
+		
 		
 	}
 }
