@@ -1,6 +1,9 @@
 package arrays;
 
-import java.util.Scanner; 
+import java.util.Scanner;
+
+import objectOrientated.Circle;
+
 import java.util.Random;
 import java.util.ArrayList;
 public class arrayActivities {
@@ -225,7 +228,7 @@ public class arrayActivities {
 	String last = names.remove(names.size()-1);
 	System.out.println(names);
 	*/
-		
+	/*
 		ArrayList<Rectangle> rectangles= new ArrayList<Rectangle>();
 		rectangles.add(new Rectangle());
 		rectangles.add(new Rectangle());
@@ -233,6 +236,54 @@ public class arrayActivities {
 		
 		Rectangle last= rectangles.remove(2);
 		rectangles.set(0, last);
+		*/
+		/*
+		int number= input.nextInt();
+		int sum=0;
+		int[] students=new int[number];
+		for(int i=0; i<students.length; i++)
+		{
+			students[i]= input.nextInt();
+		}
+		for(int num:students)
+		{
+			sum= sum+num;
+		}
+		int average= (sum/number);
+		System.out.println(average);
+		*/
+		/*
+		ArrayList<Double> employees= new ArrayList<Double>();
+		double highest=0.0;
+		for(int i=0; i<5;i++)
+		{
+			System.out.println("wage");
+			double wage= input.nextDouble();
+			employees.add(wage);
+		}
+		
+		for(double num:employees)
+		{
+			if(num>highest)
+			{
+				highest=num;
+			}
+		}
+		System.out.println(highest);
+		*/
+		Circle[] circles = new Circle[10];
+		for(int i=0; i<circles.length; i++)
+		{
+			circles[i]=new Circle();
+			System.out.println("radius");
+			double radi= input.nextDouble();
+			circles[i].setRadius(radi);
+		}
+		
+		for(Circle num:circles)
+		{
+			System.out.println(num.area());
+		}
 		
 		
 	}
