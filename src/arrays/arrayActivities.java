@@ -271,6 +271,7 @@ public class arrayActivities {
 		}
 		System.out.println(highest);
 		*/
+		/*
 		Circle[] circles = new Circle[10];
 		for(int i=0; i<circles.length; i++)
 		{
@@ -284,7 +285,26 @@ public class arrayActivities {
 		{
 			System.out.println(num.area());
 		}
+		*/
 		
-		
+		ArrayList<Friend> friends= new ArrayList<Friend>();
+		for(int i=0; i<3; i++)
+		{
+			System.out.println("Give Age");
+			int age= input.nextInt();
+			input.nextLine();
+			System.out.println("Give Name");
+			String name= input.nextLine();
+			
+			friends.add(new Friend(name, age));
+		}
+		for(int i=2; i>=0; i--)
+		{
+			String namee =friends.get(i).getName();
+			int space= namee.indexOf(" ");
+			String last= namee.substring(space+1);
+			String first= namee.substring(0, space);
+			System.out.println(last+ "," +first);
+		}
 	}
 }
