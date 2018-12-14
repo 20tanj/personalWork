@@ -242,11 +242,24 @@ public class arrayActivities {
 			System.out.println(age.getAge());
 			}
 			*/
-		
+		/*
 		pileOjunk bob=new pileOjunk();
 		System.out.println(bob.getSum(1, 2));
 		System.out.println(bob.getRandom());
 bob.setNum(62);
 System.out.println(bob.getRandom());
+*/
+		
+	System.out.println(sumNumbers(3));
+	}
+	public static int sumNumbers(int num)
+	{
+		if(num>0)
+		{
+			return num + sumNumbers(num-1);
+			
+		}
+		return 0;
 	}
 }
+
