@@ -11,7 +11,7 @@ public class arrayActivities {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner input = new Scanner(System.in);
-		Random generator = new Random();
+		Random generator = new Random(16);
 		// Activity 1
 		/*
 		 * int[] scores= new int[5]; for(int i=0; i<scores.length; i++) {
@@ -249,7 +249,7 @@ public class arrayActivities {
 bob.setNum(62);
 System.out.println(bob.getRandom());
 */
-		
+	/*
 	System.out.println(sumNumbers(3));
 	}
 	public static int sumNumbers(int num)
@@ -260,6 +260,44 @@ System.out.println(bob.getRandom());
 			
 		}
 		return 0;
+		*/
+		/*
+		int min=0;
+		int max=1600;
+		System.out.println("Give a number");
+		int answer= input.nextInt();
+		ArrayList<Integer> score= new ArrayList<Integer>();
+		for(int j=0; j<1000; j++)
+		{
+			int rec=min+ generator.nextInt(max-min+1);
+			score.add(rec);
+		}
+		for(int j=0; j<score.size(); j++)
+		{
+			if(score.get(j)==answer)
+				{
+						System.out.println("yes");
+						break;
+				}
+				*/
+	
+	int min=0;
+	int max=499;
+	int total=0;
+	ArrayList<Rectangle> score= new ArrayList<Rectangle>();
+	for(int j=0; j<100; j++)
+	{
+		int rec=min+ generator.nextInt(max-min+1);
+		int rec2=min+ generator.nextInt(max-min+1);
+		score.add(new Rectangle(rec,rec2));
+	}
+	for(int j=0; j<score.size(); j++)
+	{
+		if(score.get(j).getWidth()==10)
+			{
+					total+=1;
+			}
+	}
+System.out.println(total);
 	}
 }
-
