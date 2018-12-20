@@ -25,4 +25,24 @@ private int minutesUsed;
 	{
 		minutesUsed=0;
 	}
+	public Object clone()
+	{
+		return new Phone(myNumber, minutesUsed);
+	}
+	public String toString()
+	{
+		return "Phone object: myNumber=" + myNumber + "minutesUsed="+ minutesUsed;
+	}
+	public boolean equals(Object one, Object two)
+	{
+		if(one.toString().compareTo(two.toString())==0)
+		{
+		return true;
+		}
+		else
+		{
+		return false;
+		}
+		
+	}
 }
