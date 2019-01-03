@@ -13,7 +13,10 @@ public class Greeter {
 	//Statements to initialize the state of the object
 		age=16;
 	}
-	
+	public Greeter(int newAge) {
+		
+			age=newAge;
+		}
 //methods- things the object can do
 	
 	public void sayHello()
