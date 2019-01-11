@@ -9,7 +9,7 @@ public class Quad {
 	public Quad() {
 		s1 = 10;
 		s2 = 10;
-		s3 = 20;
+		s3 = 10;
 		s4 = 10;
 	}
 
