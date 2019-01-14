@@ -19,4 +19,16 @@ public double area()
 {
 	return super.getSide4()*height;
 }
+public String toString()
+{
+	return "Parallelogram Object: height"+height+super.toString();
+}
+public boolean equals(Object otherObject)
+{
+	return (this.toString().equals(otherObject.toString()));
+}
+public Object clone()
+{
+	return new Parallelogram(super.getSide1(),super.getSide2(), height);
+}
 }
