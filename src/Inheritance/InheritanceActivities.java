@@ -11,13 +11,17 @@ public class InheritanceActivities {
 		System.out.println(bob.perimeter());
 		System.out.println(bob.area());
 		*/
-		
+		/*
 		ArrayList<Geo> meal = new <Geo> ArrayList();
 		meal.add(new Rectangle());
 		meal.add(new Trapezoid());
+		*/
 		
-		
-		
+		Basketball bob=new Basketball();
+		bob.method1();
+		bob.method2();
+		bob.method3();
 	}
+	
 
 }
