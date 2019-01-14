@@ -56,4 +56,16 @@ public class Quad {
 		return s1 + s2 + s3 + s4;
 	}
 
+	public String toString()
+	{
+		return "Quad Object: s1="+s1+"s2="+s2+"s3="+s3+"s4="+s4;
+	}
+	public boolean equals(Object otherObject)
+	{
+		return (this.toString().equals(otherObject.toString()));
+	}
+	public Object clone()
+	{
+		return new Quad(s1,s2,s3,s4);
+	}
 }
