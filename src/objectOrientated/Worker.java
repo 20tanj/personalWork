@@ -1,7 +1,7 @@
 package objectOrientated;
 //import statements at the top
 
-public class Worker {
+public class Worker implements Comparable<Worker>{
 
 	//instance fields - data storage
 	private int hours;
@@ -29,5 +29,25 @@ public double payCheck()
 public void raise(double raiseamount)
 {
 	rate=rate+raiseamount;
+}
+public double getRate()
+{
+	return rate;
+}
+
+public int compareTo(Worker xPerson)
+{
+	if((Math.abs(rate-xPerson.getRate())<0.001))
+	{
+		return 0;
+	}
+	if(this.rate>xPerson.getRate())
+	{
+		return -1;
+	}
+	else
+	{
+		return 1;
+	}
 }
 	}
